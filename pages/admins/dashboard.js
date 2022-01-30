@@ -9,10 +9,8 @@ import styles from '../../styles/Admin/Dashboard.module.css'
 export default function dashboard() {
   const router = useRouter();
 
-    // Listen for changes on loading and authUser, redirect if needed
-    useEffect(() => 
-    {
-      
+  useEffect(() =>
+  {
       onAuthStateChanged(auth, (user) =>
       {
         if(user)
@@ -24,7 +22,9 @@ export default function dashboard() {
           router.push('/admins/adminAuth');
         }
       })
-    }, [])
+  }, [])
+
+    
 
     const loggedOut = () =>
     {
