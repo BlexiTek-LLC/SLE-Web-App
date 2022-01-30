@@ -5,7 +5,7 @@ export const LandingPage = () => {
     return (
       <div className={styles.lRow}>
         <div className={styles.lColumn}>
-          <h1 className={styles.lTitle}>Student Loan Experimen<a href='/'>t</a></h1>
+          <h1 className={styles.lTitle}>Student Loan Experimen<a href='/adminAuth'>t</a></h1>
           <p className={styles.lPara}>Paying off Student Loans using NFT technology</p>
           <a href='/'
           className={styles.lSign}>
