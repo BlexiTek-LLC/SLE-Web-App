@@ -5,6 +5,7 @@ import {onAuthStateChanged, signOut} from 'firebase/auth'
 import {auth} from '../../components/Utils/Configs/firebase'
 
 import styles from '../../styles/Admin/Dashboard.module.css'
+import SideBar from '../../components/Admin/SideBar';
 
 export default function dashboard() {
   const router = useRouter();
@@ -36,9 +37,7 @@ export default function dashboard() {
 
   return (
     <div>
-        <button className={styles.logOut} onClick={loggedOut}>
-          Sign out
-        </button>
+        <SideBar />
     </div>
   )
 }
