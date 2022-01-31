@@ -1,8 +1,588 @@
+/* Universal */
 
-
-
-
-.logOut
+.container a
 {
     color: white;
+}
+
+.container img
+{
+    display: block;
+    width: 100%;
+}
+
+.container h1
+{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.container h2
+{
+    font-size: 1.4rem;
+}
+
+.container h3
+{
+    font-size: 0.87rem;
+}
+
+.container h4
+{
+    font-size: 0.8rem;
+}
+
+.container h5
+{
+    font-size: .77rem;
+}
+
+.small
+{
+    font-size: .75rem;
+}
+
+.profile-photo
+{
+    width: 2.8vw;
+    height: 2.8vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted
+{
+    color: #7d8da1;
+}
+
+.container p
+{
+    color: white;
+}
+
+.container b
+{
+    color: white;
+}
+
+.container
+{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+
+/* SideBar */
+
+.container aside
+{
+    height: 100vh;
+}
+
+.top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+    background-color: black;
+}
+
+.logo
+{
+    display: flex;
+    gap: .8rem;
+}
+
+.logo h2
+{
+    color: white;
+}
+
+.dange
+{
+    color: gold;
+}
+
+.logo img
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.close
+{
+    display: none;
+}
+
+
+.close span
+{
+    color: white;
+}
+
+.sidebar a span
+{
+    color: white;
+}
+
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+.sidebar h3
+{
+    font-weight: 500;
+}
+
+.sidebar a
+{
+    display: flex;
+    color: white;
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+.sidebar a span
+{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+.sidebar a:last-child
+{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
+.sidebar a.active
+{
+    background-color: white;
+    color: black;
+    margin-left: 0;
+}
+
+.sidebar a.active span
+{
+    color: black;
+}
+
+.sidebar a.active::before
+{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: black;
+}
+
+.sidebar a.active span
+{
+    color: black;
+    margin-left: calc(1rem - 6px);
+}
+
+.sidebar a:hover
+{
+    color: white;
+}
+
+.sidebar a.active:hover
+{
+    color: black;
+}
+
+.sidebar a:hover span
+{
+    margin-left: 1rem;
+}
+
+.messageCount
+{
+    background-color: gold;
+    color: rgb(0, 0, 0);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+
+/* Main */
+
+.container main
+{
+    margin-top: 1.4rem;
+
+}
+
+.header
+{
+    color: white;
+}
+
+.container main .date
+{
+    display: inline-block;
+    background-color: gold;
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+.date input[type='date']
+{
+    background: transparent;
+}
+
+.insights
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.insights > div
+{
+    background: gold;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+}
+
+.insights > div span
+{
+    background: black;
+    color: gold;
+    padding: .5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.middle
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.insights h3
+{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.insights .progress
+{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.insights svg
+{
+    width: 7rem;
+    height: 7rem;
+}
+
+.insights svg circle
+{
+    fill: none;
+    stroke: black;
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.insights .funds svg circle
+{
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+.insights .users svg circle
+{
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+
+.insights .loans svg circle
+{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+
+.number
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insights small
+{
+    margin-top: 1.6rem;
+}
+
+
+/* People */
+
+.people
+{
+    margin-top: 2rem;
+}
+
+.people h2
+{
+    margin-bottom: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.people table
+{
+    background: gold;
+    width: 100%;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+}
+
+.people table tbody td
+{
+    height: 2.8rem;
+    border-bottom: 1px solid black;
+}
+
+.people table tbody tr:last-child td
+{
+    border: none;
+}
+
+.people a
+{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: gold;
+}
+
+
+/* Right */
+
+.right
+{
+    margin-top: 1.4rem;
+}
+
+.right .top
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 6vw;
+    margin-top: 1px;
+}
+
+.info
+{
+    margin-top: 2vh;
+}
+
+.profile small
+{
+    color: white;
+}
+
+.profilePic
+{
+    width: 5vw;
+    height: 5vw;
+}
+
+.right .top button
+{
+    display: none;
+}
+
+.right .top .profile
+{
+    display: flex;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+/* Recent Updates */
+.recentUpdates
+{
+    margin-top: 3rem;
+}
+
+
+.recentUpdates h2
+{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.recentUpdates .updates
+{
+    background: gold;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-right: 4vw;
+}
+
+.update
+{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Analytics */
+.analytics
+{
+    margin-top: 2rem;
+}
+
+.analytics h2
+{
+    margin-bottom: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.itemsOnline
+{
+    background: gold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    margin-right: 4vw;
+    border-radius: 5px;
+}
+
+.itemsOffline
+{
+    background: gold;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    margin-right: 4vw;
+    border-radius: 5px;
+}
+
+.itemsOnline .right
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+
+.itemsOffline .right
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+
+.success
+{
+    color: green;
+}
+
+.danger
+{
+    color: red;
+}
+
+.icon
+{
+    padding: 0.6rem;
+    color: gold;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+}
+
+
+/* Media Queries */
+
+/* Tablets */
+@media screen and (max-width: 1200px)
+{   
+    .container
+    {
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    .logo h2
+    {
+        display: none;
+    }
+
+    .sidebar h3
+    {
+        display: none;
+    }
+
+    .sidebar a
+    {
+        width: 5.6rem;
+    }
+
+    .sidebar a:last-child
+    {
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    .insights
+    {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .people
+    {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    .people table
+    {
+        width: 83vw;
+    }
 }
