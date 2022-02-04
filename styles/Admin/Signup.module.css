@@ -1,0 +1,56 @@
+
+
+.container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.email, 
+.password,
+.passwordConfirm {
+    background-color: black;
+    border-bottom: 2px solid yellow;
+    font-size: 24px;
+    font-weight: 200;
+    width: 100%;
+    padding-top: 25px;
+    color: yellow;
+    outline: none;
+    margin-top: 27px;
+
+}
+
+.submitBttn{
+    width: 100%;
+    color: black;
+    background-color: rgb(223, 223, 4);
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.submitBttn:hover{
+    width: 100%;
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.login{
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
