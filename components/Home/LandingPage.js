@@ -14,7 +14,7 @@ export const LandingPage = () => {
         <p className={styles.lPara}>
           Paying off Student Loans using NFT technology
         </p>
-        <Link href='/admins/Login' passHref>
+        <Link href='/Signup' passHref>
           <a className={styles.lSign}>Sign In</a>
         </Link>
       </div>

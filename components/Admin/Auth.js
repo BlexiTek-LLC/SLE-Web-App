@@ -42,7 +42,8 @@ function Auth()
             <label htmlFor="email">Email</label>
         </div>
         <div className={styles.inputGroup}>
-            <input type="password" name="password" id="password" value={password} 
+            <input type="password" 
+            name="password" id="password" value={password} 
             onChange={() => setPassword(event.target.value)} required />
             <label htmlFor="password">Password</label>
         </div>
