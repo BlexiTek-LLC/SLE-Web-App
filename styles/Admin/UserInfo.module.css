@@ -1,0 +1,45 @@
+.container{
+    background-color: rgb(230, 228, 228);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+    height: 70%;
+    width: 70%;
+}
+.profileImage{
+    border-radius: 100%;
+}
+.header{
+    font-size: 70px;
+    font-weight: 200;
+}
+.subheader{
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 25px;
+}
+.name, .dob, .selection {
+    border-bottom: 2px solid rgb(255, 255, 0);
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+#firstName, 
+#lastName,
+#birth,
+#selection {
+    outline: none;
+    background: none;
+    border: none;
+}
+
