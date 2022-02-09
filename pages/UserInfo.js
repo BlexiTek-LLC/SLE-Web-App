@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/Admin/UserInfo.module.css";
+import styles from "../styles/UserInfo.module.css"
 import Image from "next/image";
-import Profile from "../../public/assets/male.jpg";
+import Profile from "../public/assets/male.jpg";
 
 const UserInfo = () => {
-  const [displaySelection, setDisplaySelection] = useState("I am a...");
+  const [usersType, setUsersType] = useState("");
+  
 
 
-  const selection = (e) => {
-    e.preventDefault();
-    console.log(e.target.value)
-    //  I need to refactor this
-    displaySelection ? setDisplaySelection('') : setDisplaySelection("I am a");
-  };
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -46,14 +41,12 @@ const UserInfo = () => {
             <label>Date of Birth: </label>
             <input type="date" name="birth" id={styles.birth} />
           </div>
-            <button onClick={selection} className={styles.selection} style={{width: 500}}>{displaySelection}</button>
-            {/* Redoing this also */}
-            {!displaySelection && (
-              <select name="money" id="money">
-                <option value="loanee">Loanee</option>
+            <label>I am a... </label>
+              <select className={styles.userType} name="money"  id="money" onChange={(e) => setUsersType(e.target.value)}>
+                <option>Who Are You?</option>
+                <option value="Loanee">Loanee</option>
                 <option value="Donor">Donor</option>
               </select>
-            )}
         </form>
       </div>
     </div>
