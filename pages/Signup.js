@@ -23,7 +23,7 @@ const Signup = () => {
       {
         // Signing up user
         const user = userCredential.user;
-        router.push('/discover')
+        router.push('/UserInfo')
       })
       .catch((error) => 
       {
@@ -72,7 +72,7 @@ const Signup = () => {
         </button>
       </form>
       <div className={styles.login}>
-        Already have an account? <Link href="/" passHref><a style={{color: "yellow"}}>Login</a></Link>
+        Already have an account? <Link href="/Login" passHref><a style={{color: "yellow"}}>Login</a></Link>
       </div>
     </div>
   );
