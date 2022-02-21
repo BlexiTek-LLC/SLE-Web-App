@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import { auth } from "../components/Utils/Configs/firebase";
 
-
 import styles from "../styles/Signup.module.css"
 import Link from "next/link";
 
@@ -75,6 +74,7 @@ const Signup = () => {
         Already have an account? <Link href="/" passHref><a style={{color: "yellow"}}>Login</a></Link>
       </div>
     </div>
+
   );
 };
 

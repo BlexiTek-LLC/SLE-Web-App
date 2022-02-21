@@ -6,12 +6,11 @@ import Profile from "../../public/assets/male.jpg";
 const UserInfo = () => {
   const [displaySelection, setDisplaySelection] = useState("I am a...");
 
-
   const selection = (e) => {
     e.preventDefault();
-    console.log(e.target.value)
+    console.log(e.target.value);
     //  I need to refactor this
-    displaySelection ? setDisplaySelection('') : setDisplaySelection("I am a");
+    displaySelection ? setDisplaySelection("") : setDisplaySelection("I am a");
   };
   return (
     <div className={styles.container}>
@@ -28,7 +27,7 @@ const UserInfo = () => {
         />
         <form className={styles.form}>
           <div className={styles.name}>
-              <label>Name:</label>
+            <label>Name:</label>
             <input
               type="text"
               name="firstName"
@@ -46,14 +45,28 @@ const UserInfo = () => {
             <label>Date of Birth: </label>
             <input type="date" name="birth" id={styles.birth} />
           </div>
-            <button onClick={selection} className={styles.selection} style={{width: 500}}>{displaySelection}</button>
-            {/* Redoing this also */}
-            {!displaySelection && (
-              <select name="money" id="money">
-                <option value="loanee">Loanee</option>
-                <option value="Donor">Donor</option>
-              </select>
-            )}
+          <button
+            onClick={selection}
+            className={styles.selection}
+            style={{ width: 500 }}
+          >
+            {displaySelection}
+          </button>
+          {/* Redoing this also */}
+          {!displaySelection && (
+            <select name="money" id="money">
+              <option value="loanee">Loanee</option>
+              <option value="Donor">Donor</option>
+            </select>
+          )}
+          <div className={styles.dob}>
+            <label>Bio: </label>
+            <br />
+            <input type="text" name="bio" className={styles.bio} placeholder="I am..."/>
+          </div>
+          <button className={styles.submitBttn}>
+            Save
+          </button>
         </form>
       </div>
     </div>

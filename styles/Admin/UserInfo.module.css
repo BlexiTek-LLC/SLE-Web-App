@@ -43,3 +43,35 @@
     border: none;
 }
 
+.bio{
+    background-color: black;
+    color: yellow;
+    width: 100%;
+    height: 250px;
+    
+}
+
+.submitBttn{
+    width: 100%;
+    color: black;
+    background-color: rgb(223, 223, 4);
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.submitBttn:hover{
+    width: 100%;
+    color: yellow;
+    background-color: black;
+    border: 1px solid yellow;
+    padding: 5px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
