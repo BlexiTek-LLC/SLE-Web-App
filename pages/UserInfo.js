@@ -1,17 +1,33 @@
 import React, { useState, useEffect } from "react";
+import {useRouter} from "next/router";
 import styles from "../styles/Admin/UserInfo.module.css";
 import Image from "next/image";
 import Profile from "../public/assets/male.jpg";
 
-const UserInfo = () => {
-  const [displaySelection, setDisplaySelection] = useState("I am a...");
 
+const UserInfo = () => {
+
+  const router = useRouter()
+
+  //!STATE
+  const [displaySelection, setDisplaySelection] = useState("I am a...");
+  const [loanee, setLoanee] = useState(false)
+ 
+
+//! FUNCTIONS
   const selection = (e) => {
     e.preventDefault();
     console.log(e.target.value);
     //  I need to refactor this
     displaySelection ? setDisplaySelection("") : setDisplaySelection("I am a");
   };
+
+  const whereToGo = (e) => {
+    e.preventDefault()
+    loanee == true ? router.push("/Loanee") : ''
+  }
+
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -25,7 +41,7 @@ const UserInfo = () => {
           height={200}
           className={styles.profileImage}
         />
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={whereToGo}>
           <div className={styles.name}>
             <label>Name:</label>
             <input
@@ -54,9 +70,9 @@ const UserInfo = () => {
           </button>
           {/* Redoing this also */}
           {!displaySelection && (
-            <select name="money" id="money">
-              <option value="loanee">Loanee</option>
-              <option value="Donor">Donor</option>
+            <select name="money" id="money" onChange={(e) => {e.target.value == "Loanee" ? setLoanee(true): setLoanee(false)}}>
+              <option value="Donor">Donor</option> 
+              <option value="Loanee">Loanee</option>
             </select>
           )}
           <div className={styles.dob}>
