@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Admin/UserInfo.module.css";
 import Image from "next/image";
+import Pic from "next/image";
 import Profile from "../../public/assets/male.jpg";
 
 const UserInfo = () => {
