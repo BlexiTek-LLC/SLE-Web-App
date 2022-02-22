@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../../styles/Admin/UserInfo.module.css";
 import Image from "next/image";
-import Pic from "next/image";
 import Profile from "../../public/assets/male.jpg";
 
 const UserInfo = () => {
@@ -63,11 +62,14 @@ const UserInfo = () => {
           <div className={styles.dob}>
             <label>Bio: </label>
             <br />
-            <input type="text" name="bio" className={styles.bio} placeholder="I am..."/>
+            <input
+              type="text"
+              name="bio"
+              className={styles.bio}
+              placeholder="I am..."
+            />
           </div>
-          <button className={styles.submitBttn}>
-            Save
-          </button>
+          <button className={styles.submitBttn}>Save</button>
         </form>
       </div>
     </div>
