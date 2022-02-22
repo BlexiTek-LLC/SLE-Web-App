@@ -74,7 +74,6 @@ const Signup = () => {
         Already have an account? <Link href="/" passHref><a style={{color: "yellow"}}>Login</a></Link>
       </div>
     </div>
-
   );
 };
 

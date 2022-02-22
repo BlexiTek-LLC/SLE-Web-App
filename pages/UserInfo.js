@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import styles from "../../styles/Admin/UserInfo.module.css";
+import styles from "../styles/Admin/UserInfo.module.css";
 import Image from "next/image";
-import Profile from "../../public/assets/male.jpg";
+import Profile from "../public/assets/male.jpg";
 
 const UserInfo = () => {
   const [displaySelection, setDisplaySelection] = useState("I am a...");
