@@ -6,6 +6,8 @@ import Profile from "../public/assets/male.jpg";
 const UserInfo = () => {
   const [usersType, setUsersType] = useState("");
 
+
+  
   return (
     <div className={styles.container}>
       <div className={styles.content}>
