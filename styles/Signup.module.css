@@ -1,15 +1,18 @@
 
-
 .container{
-    height: 100vh;
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* justify-content: space-around; */
+    text-align: center;
+    /* flex-direction: column; */
     margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
+.sideImg{
 
+}
 .email, 
 .password,
 .passwordConfirm {

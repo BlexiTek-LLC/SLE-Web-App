@@ -1,6 +1,0 @@
-
-// const Wait = () => {
-
-// }
-
-// export Default
