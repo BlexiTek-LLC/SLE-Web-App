@@ -17,9 +17,10 @@
 .hTitle
 {
   color: white;
-  font-size: 5rem;
+  font-size: 4.5rem;
+  line-height: 1;
   font-weight: bold;
-  margin-top: 30vh;
+  margin-top: 40vh;
   text-align: center;
 }
 
@@ -48,7 +49,7 @@
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  margin-left: 42%;
+  margin-left: 18vw;
   margin-top: 5vh;
 }
 
@@ -126,11 +127,31 @@
   margin-left: 18vw;
 }
 
+.ReactModal__Overlay 
+{
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open 
+{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close 
+{
+  opacity: 0;
+}
+
+/* Rigt hero section */
+
 .hSocial
 {
   margin-top: 6vh;
   margin-left: 3.5vw;
 }
+
+/* Navigation */
 
 .nav, .menu 
 {
@@ -228,26 +249,9 @@
 }
 
 
-
-
-.ReactModal__Overlay 
-{
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open 
-{
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close 
-{
-  opacity: 0;
-}
-
 @media screen and (max-width: 479px) 
 {
+  /* Hero Section */
   .hColumn 
   {
     width: 100%;
@@ -295,7 +299,6 @@
 
   .hButton
   {
-    position: absolute;
     margin-left: 30vw;
   }
 
