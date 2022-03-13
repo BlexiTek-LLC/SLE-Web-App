@@ -1,0 +1,109 @@
+
+
+.Row 
+{
+    display: flex;
+    margin-top: 100vh;
+    width: 100%;
+}
+  
+.column 
+{
+    flex: 50%;
+    margin-top: -55vh;
+}
+  
+.column2 
+{
+    flex: 50%;
+    margin-top: -75vh;
+}
+
+.column2 h1
+{
+    color: white;
+    font-size: 6rem;
+    text-align: center;
+    margin-left: -10vw;
+    line-height: 1;
+    margin-top: 6vh;
+}
+
+.column2 p
+{
+    color: white;
+    font-size: 1.9rem;
+    margin-left: -3vw;
+    margin-top: 2vh;
+}
+
+.column2 button
+{
+    background-color: #ca973b;
+    font-size: 3rem;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+.column2 span
+{
+    color: #ca973b;
+}
+
+.logo
+{
+    width: 30vw;
+    height: 50vh;
+    margin-top: -15vh;
+    margin-left: 4vw;
+}
+
+@media screen and (max-width: 479px)
+{
+    .column
+    {
+        display: none;
+    }
+
+    .Row
+    {
+        margin-top: 110vh;
+    }
+
+    .column2 h1
+    {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 1vw;
+    }
+
+    .column2 p
+    {
+        font-size: 1.42rem;
+        text-align: center;
+        margin-left: 1vw;
+    }
+
+    .column2 button
+    {
+        margin-left: 15vw;
+    }
+}
+
+@media screen and (min-width: 480px ) and (max-width: 767px)
+{
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px)
+{
+  
+}
+
+@media screen and (min-width: 1281px)
+{
+  
+}
