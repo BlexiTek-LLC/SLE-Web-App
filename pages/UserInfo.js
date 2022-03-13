@@ -44,8 +44,7 @@ const UserInfo = () => {
           <label>I am a... </label>
           <select
             className={styles.userType}
-            name="money"
-            id="money"
+            value={value}
             onChange={(e) => setUsersType(e.target.value)}
           >
             <option>Who Are You?</option>

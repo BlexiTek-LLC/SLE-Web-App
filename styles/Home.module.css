@@ -1,56 +1,346 @@
-/* HOME */
 
-.lColumn 
-{
-  float: left;
-  width: 50%;
+
+/* Hero */
+
+.heroBox {
+  display: flex;
 }
 
-/* Clear floats after the columns */
-.lRow:after 
-{
-  content: "";
-  display: table;
-  clear: both;
+.hColumn {
+  flex: 50%;
 }
 
-.lImg
-{
-  margin-top: 25vh;
+.hColumn2 {
+  flex: 50%;
 }
 
-.lTitle
+.hTitle
 {
   color: white;
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: bold;
-  margin-top: 35vh;
-  margin-left: 3vw;
+  margin-top: 30vh;
+  text-align: center;
 }
 
-.lPara
+.hSubTitle
+{
+  color: #ca973b;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: -3vh;
+  text-align: center;
+}
+
+.hPara
 {
   color: white;
   font-size: 1.5rem;
-  margin-left: 7vw;
   margin-bottom: 5vh;
+  text-align: center;
+  font-weight: bold;
 }
 
-.lSign
+.hButton
 {
-  color: rgb(0, 0, 0);
-  width: 25vw;
-  font-size: 1.5rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  background-color: #ca973b;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 42%;
+  margin-top: 5vh;
+}
+
+/* The popup form - hidden by default */
+.hPopForm
+{
+  background-color: #ca973b;
+  width: 45vw;
+  height: 65vh;
+  position: absolute;
+  margin-left: 28vw;
+  margin-top: 15vh;
+  z-index: 9;
   padding: 15px;
-  margin-left: 19vw;
+  border-radius: 5px;
+}
+
+.formOverlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Full-width input fields */
+.formBox input[type=text] {
+  width: 45%;
+  padding: 15px;
+  margin: 5px 5px 22px 0;
+  border: none;
+  color: white;
+  background: black;
+}
+
+.formBox select
+{
+  background-color: black;
+  color: white;
+}
+
+.formBox h3
+{
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: -5vh;
+}
+
+.hClose
+{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 12;
+  margin-top: -8vh;
+  margin-left: 41vw;
+}
+
+.formContent
+{
+  margin-left: 2vw;
+  margin-top: 10vh;
+}
+
+.hSubmit
+{
+  background-color: black;
+  color: #ca973b;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 18vw;
+}
+
+.hSocial
+{
+  margin-top: 6vh;
+  margin-left: 3.5vw;
+}
+
+.nav, .menu 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav 
+{
+  position: absolute;
+  background-color: #ca973b;
+  padding: 20px;
+  transition: 0.5s;
+  border-radius: 50px;
+  width: 35vw;
+  margin-top: 3vh;
+  margin-left: 30vw;
+  margin-bottom: -10vh;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.menu 
+{
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.menu li 
+{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.menu li a 
+{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.menu li a:hover 
+{
+  color: #161919;
+}
+
+.nav input 
+{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.nav span 
+{
+  position: absolute;
+  left: 30px;
+  width: 30px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: #666;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.nav input:checked ~ span 
+{
+  background-color: #f974a1;
+}
+
+.nav span:nth-child(2) 
+{
+  transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) 
+{
+  transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) 
+{
+  transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) 
+{
+  transform: translateY(0) rotate(45deg);
 }
 
 
-@media (max-width: 600px) {
-  .grid {
+
+
+.ReactModal__Overlay 
+{
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open 
+{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close 
+{
+  opacity: 0;
+}
+
+@media screen and (max-width: 479px) 
+{
+  .hColumn 
+  {
     width: 100%;
-    flex-direction: column;
   }
+
+  .hColumn2
+  {
+    display: none;
+  }
+
+  .nav
+  {
+    width: 100%;
+    border-radius: 0;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 0;
+    
+  }
+
+  .menu
+  {
+    
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .menu a
+  {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .hTitle
+  {
+    font-size: 2rem;
+  }
+
+  .hSubTitle
+  {
+    font-size: 1.8rem;
+    margin-top: -1vh;
+  }
+
+  .hButton
+  {
+    position: absolute;
+    margin-left: 30vw;
+  }
+
+  .hSocial
+  {
+    display: none;
+  }
+
+  .hPopForm
+  {
+    width: 80vw;
+    position: absolute;
+    margin-left: 10vw;
+  }
+
+  .formBox h3
+  {
+    font-size: 1.5rem;
+  }
+
+  .hClose
+  {
+    position: absolute;
+    margin-top: -6vh;
+    margin-left: 65vw;
+  }
+
+  .hSubmit
+  {
+    position: absolute;
+    margin-left: 23vw;
+  }
+}
+
+@media screen and (min-width: 480px ) and (max-width: 767px)
+{
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px)
+{
+  
+}
+
+@media screen and (min-width: 1281px)
+{
+  
 }
