@@ -89,7 +89,8 @@
 
     .column2 button
     {
-        margin-left: 15vw;
+        margin-left: 25vw;
+        font-size: 2rem;
     }
 }
 

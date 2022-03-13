@@ -168,9 +168,9 @@
   transition: 0.5s;
   border-radius: 50px;
   width: 35vw;
-  margin-top: 3vh;
+  z-index: 99;
+  margin-top: 5vh;
   margin-left: 30vw;
-  margin-bottom: -10vh;
   overflow: hidden;
   box-shadow: 0 8px 15px rgba(0,0,0,.2);
 }

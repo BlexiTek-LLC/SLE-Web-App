@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import AboutPage from '../components/Home/AboutPage'
 import LandingPage from '../components/Home/LandingPage'
+import SignatureWallPage from '../components/Home/SignatureWallPage'
 import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
 
       <LandingPage />
       <AboutPage />
+      <SignatureWallPage />
     </div>
   )
 }
