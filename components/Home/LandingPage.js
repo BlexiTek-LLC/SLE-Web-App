@@ -51,9 +51,7 @@ export const LandingPage = () =>
             <div className={styles.menu}>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
-              <li><a href="#">App</a></li>
-              <li><a href="#">Marketplace</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">SLE Coin</a></li>
             </div>
         </div>
         <div className={styles.hColumn}>
