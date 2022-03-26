@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+/* Loading Screen */
 
 .container 
 { 
@@ -22,6 +22,35 @@
     font-size: 2.5rem;
 }
 
+/* Navbar */
+
+.navbar
+{
+    height: 80%;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.navLinks
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    list-style: none;
+}
+
+.navItem
+{
+    background-color: #ca973b;
+    padding: 15px;
+    border-radius: 5px;
+}
 
   
 

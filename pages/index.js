@@ -6,6 +6,7 @@ import AboutPage from '../components/Home/AboutPage'
 import LandingPage from '../components/Home/LandingPage'
 import SignatureWallPage from '../components/Home/SignatureWallPage'
 import LoadingScreen from '../components/Utils/LoadingScreen';
+import Navbar from '../components/Utils/Navbar';
 
 import styles from '../styles/Home.module.css'
 
@@ -38,9 +39,7 @@ export default function Home()
             <link rel="icon" href="/assets/admin/sleLogo.png" />
           </Head>
 
-          <LandingPage />
-          <AboutPage />
-          <SignatureWallPage />
+          <Navbar />
         </div>
       }
     </div>
