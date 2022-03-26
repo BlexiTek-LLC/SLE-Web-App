@@ -61,3 +61,18 @@
     animation-delay:.6s;
 }
   
+
+
+
+@media screen and (max-width: 479px)
+{
+    .back
+    {
+        margin-left: 12vw;
+    }
+
+    .back span
+    {
+        font-size: 1.5rem;
+    }
+}
