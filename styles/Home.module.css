@@ -1,336 +1,168 @@
 
-
-/* Hero */
-
-.heroBox {
-  display: flex;
-}
-
-.hColumn {
-  flex: 50%;
-}
-
-.hColumn2 {
-  flex: 50%;
-}
-
-.hTitle
-{
-  color: white;
-  font-size: 4.5rem;
-  line-height: 1;
-  font-weight: bold;
-  margin-top: 40vh;
-  text-align: center;
-}
-
-.hSubTitle
+.title
 {
   color: #ca973b;
-  font-size: 4rem;
-  font-weight: bold;
-  margin-top: -3vh;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 4vh;
 }
 
-.hPara
+.contentBox:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftBox, .rightBox
+{
+  float: left;
+  width: 50%;
+}
+
+.hAvatar
+{
+  width: 26vw;
+  margin-top: 6vh;
+  margin-left: 6vw;
+}
+
+.hNft
+{
+  width: 30vw;
+  z-index: 50;
+  margin-top: -14vh;
+  margin-left: 15vw;
+}
+
+.hSubtitle
+{
+  color: #ca973b;
+  font-size: 2rem;
+  margin-top: 3vh;
+  margin-left: 6vw;
+}
+
+.cta
 {
   color: white;
-  font-size: 1.5rem;
-  margin-bottom: 5vh;
-  text-align: center;
-  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2vh;
 }
 
-.hButton
+.signatureWall
 {
+  margin-top: -22vh;
+}
+
+.post
+{
+  position: absolute;
+  top: 35vh;
+  background-color: rgba(255, 255, 255, 0);
+  border: #ca973b 2px solid;
+  border-radius: 5px;
+  color: white;
+}
+
+.email
+{
+  position: absolute;
+  left: 67vw;
+  top: 36.5vh;
+  background-color: rgba(255, 255, 255, 0);
+  border: #ca973b 2px solid;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn
+{
+  color: white;
   background-color: #ca973b;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 83vw;
+  top: 37.5vh;
+}
+
+.postBox
+{
+  border: #ca973b 2px solid;
+  border-radius: 5px;
+  width: 45vw;
+  height: 50vh;
+  position: absolute;
+  top: 45vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.postBox::-webkit-scrollbar
+{
+  display: none;
+}
+
+.box
+{
+  background-color: black;
   color: white;
   padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  margin-left: 18vw;
-  margin-top: 5vh;
+  border-bottom: #ca973b 2px solid;
 }
 
-/* The popup form - hidden by default */
-.hPopForm
+.postImg
 {
-  background-color: #ca973b;
-  width: 45vw;
-  height: 65vh;
-  position: absolute;
-  margin-left: 28vw;
-  margin-top: 15vh;
-  z-index: 9;
-  padding: 15px;
-  border-radius: 5px;
+  display: inline;
+  margin-right: 2vw;
 }
 
-.formOverlay
+.userPosts
 {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-/* Full-width input fields */
-.formBox input[type=text] {
-  width: 45%;
-  padding: 15px;
-  margin: 5px 5px 22px 0;
-  border: none;
   color: white;
-  background: black;
+  display: inline;
+  font-size: 2rem;
 }
-
-.formBox select
-{
-  background-color: black;
-  color: white;
-}
-
-.formBox h3
-{
-  font-weight: bold;
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 5vh;
-  margin-bottom: -5vh;
-}
-
-.hClose
-{
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  z-index: 12;
-  margin-top: -8vh;
-  margin-left: 41vw;
-}
-
-.formContent
-{
-  margin-left: 2vw;
-  margin-top: 10vh;
-}
-
-.hSubmit
-{
-  background-color: black;
-  color: #ca973b;
-  padding: 15px;
-  border-radius: 5px;
-  margin-left: 18vw;
-}
-
-.ReactModal__Overlay 
-{
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open 
-{
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close 
-{
-  opacity: 0;
-}
-
-/* Rigt hero section */
-
-.hSocial
-{
-  margin-top: 6vh;
-  margin-left: 3.5vw;
-}
-
-/* Navigation */
-
-.nav, .menu 
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav 
-{
-  position: absolute;
-  background-color: #ca973b;
-  padding: 20px;
-  transition: 0.5s;
-  border-radius: 50px;
-  width: 35vw;
-  z-index: 99;
-  margin-top: 5vh;
-  margin-left: 30vw;
-  overflow: hidden;
-  box-shadow: 0 8px 15px rgba(0,0,0,.2);
-}
-
-.menu 
-{
-  margin: 0;
-  padding: 0;
-  width: 450px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-.menu li 
-{
-  list-style: none;
-  margin: 0 10px;
-}
-
-.menu li a 
-{
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: 0.5s;
-}
-
-.menu li a:hover 
-{
-  color: #161919;
-}
-
-.nav input 
-{
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  opacity: 0;
-}
-
-.nav span 
-{
-  position: absolute;
-  left: 30px;
-  width: 30px;
-  height: 4px;
-  border-radius: 50px;
-  background-color: #666;
-  pointer-events: none;
-  transition: 0.5s;
-}
-
-.nav input:checked ~ span 
-{
-  background-color: #f974a1;
-}
-
-.nav span:nth-child(2) 
-{
-  transform: translateY(-8px);
-}
-
-.nav input:checked ~ span:nth-child(2) 
-{
-  transform: translateY(0) rotate(-45deg);
-}
-.nav span:nth-child(3) 
-{
-  transform: translateY(8px);
-}
-
-.nav input:checked ~ span:nth-child(3) 
-{
-  transform: translateY(0) rotate(45deg);
-}
-
 
 @media screen and (max-width: 479px) 
 {
-  /* Hero Section */
-  .hColumn 
+  .leftBox, .rightBox
   {
     width: 100%;
   }
 
-  .hColumn2
+  .rightBox
   {
     display: none;
   }
 
-  .nav
+  .title
   {
-    width: 100%;
-    border-radius: 0;
-    position: absolute;
-    margin-left: 0;
-    margin-top: 0;
-    
-  }
-
-  .menu
-  {
-    
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .menu a
-  {
+    font-size: 1.7rem;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
   }
 
-  .hTitle
+  .hAvatar
   {
-    font-size: 2rem;
+    width: 70vw;
+    margin-left: 15vw;
   }
 
-  .hSubTitle
+  .hNft
   {
-    font-size: 1.8rem;
-    margin-top: -1vh;
-  }
-
-  .hButton
-  {
-    margin-left: 30vw;
-  }
-
-  .hSocial
-  {
-    display: none;
-  }
-
-  .hPopForm
-  {
-    width: 80vw;
-    position: absolute;
-    margin-left: 10vw;
-  }
-
-  .formBox h3
-  {
-    font-size: 1.5rem;
-  }
-
-  .hClose
-  {
-    position: absolute;
+    width: 75vw;
     margin-top: -6vh;
-    margin-left: 65vw;
+    margin-left: 12.5vw;
   }
 
-  .hSubmit
+  .hSubtitle
   {
-    position: absolute;
-    margin-left: 23vw;
+    margin-top: 5vh;
+    text-align: center;
+    margin-left: 2vw;
   }
+
 }
 
 @media screen and (min-width: 480px ) and (max-width: 767px)
