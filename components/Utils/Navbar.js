@@ -56,7 +56,7 @@ function Navbar()
             </li>
             <li>
               <a
-                href="/"
+                href="/process"
                 aria-label="About us"
                 title="About us"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -154,7 +154,7 @@ function Navbar()
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/process"
                           aria-label="About us"
                           title="About us"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
