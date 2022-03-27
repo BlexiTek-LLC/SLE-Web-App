@@ -36,7 +36,7 @@ function Navbar()
             </li>
             <li>
               <a
-                href="/"
+                href="/about"
                 aria-label="Our product"
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -134,7 +134,7 @@ function Navbar()
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/about"
                           aria-label="Our product"
                           title="Our product"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
