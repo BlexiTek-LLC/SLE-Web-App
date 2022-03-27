@@ -1,96 +1,122 @@
 
-
-.Row 
+.leftBox, .rightBox
 {
-    display: flex;
-    margin-top: 100vh;
-    width: 100%;
-}
-  
-.column 
-{
-    flex: 50%;
-    margin-top: -55vh;
-}
-  
-.column2 
-{
-    flex: 50%;
-    margin-top: -75vh;
+    float: left;
+    width: 50%;
 }
 
-.column2 h1
+.row:after
 {
-    color: white;
-    font-size: 6rem;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title
+{
+    color: #ca973b;
     text-align: center;
-    margin-left: -10vw;
-    line-height: 1;
-    margin-top: 6vh;
+    font-size: 2rem;
+    margin-top: 3vh;
 }
 
-.column2 p
+.heading
+{
+    color: #ca973b;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+.words
 {
     color: white;
-    font-size: 1.9rem;
-    margin-left: -3vw;
-    margin-top: 2vh;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 4vh;
 }
 
-.column2 button
+.rightBox
+{
+    margin-bottom: 10vh;
+}
+
+/* Team Section */
+.subtitle
+{
+    color: #ca973b;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.tAvatar
+{
+    width: 5vw;
+    background-color: black;
+    border-radius: 50px;
+    border: black 2px solid;
+    margin-left: 4.5vw;
+}
+
+.name
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.tColumn
 {
     background-color: #ca973b;
-    font-size: 3rem;
-    color: white;
-    padding: 20px;
+    padding: 45px;
     border-radius: 5px;
-    margin-top: 10vh;
+    text-align: center;
+    float: left;
+    width: 20%;
     margin-left: 10vw;
 }
 
-.column2 span
+.tRow::after
 {
-    color: #ca973b;
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.logo
-{
-    width: 30vw;
-    height: 50vh;
-    margin-top: -15vh;
-    margin-left: 4vw;
-}
 
 @media screen and (max-width: 479px)
 {
-    .column
+    .leftBox, .rightBox
     {
-        display: none;
+        width: 100%;
     }
 
-    .Row
+    .tColumn
     {
-        margin-top: 110vh;
-    }
-
-    .column2 h1
-    {
-        font-size: 2.5rem;
-        text-align: center;
-        margin-left: 1vw;
-    }
-
-    .column2 p
-    {
-        font-size: 1.42rem;
-        text-align: center;
-        margin-left: 1vw;
-    }
-
-    .column2 button
-    {
+        width: 50%;
         margin-left: 25vw;
-        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+
+    .tRow
+    {
+        margin-bottom: 10vh;
+    }
+
+    .tAvatar
+    {
+        width: 15vw;
+        margin-left: 6vw;
+    }
+
+    .title
+    {
+        font-size: 1.5rem;
+    }
+
+    .words
+    {
+        font-size: 0.7rem;
     }
 }
 
