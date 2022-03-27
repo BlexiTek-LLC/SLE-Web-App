@@ -1,0 +1,67 @@
+
+.title
+{
+    color: #ca973b;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.box
+{
+    border: #ca973b 2px solid;
+    border-radius: 5px;
+    width: 55vw;
+    height: 35vh;
+    padding: 15px;
+    margin-left: 22vw;
+    margin-top: 15vh;
+}
+
+.subTitle
+{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2vh;
+}
+
+.worth
+{
+    color: #ca973b;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.date
+{
+    color: white;
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 479px)
+{
+    .title
+    {
+        font-size: 1.4rem;
+    }
+
+    .box
+    {
+        width: 75vw;
+        margin-left: 14vw;
+    }
+
+    .subTitle
+    {
+        font-size: 1.5rem;
+    }
+
+    .worth
+    {
+        font-size: 1.3rem;
+    }
+}
