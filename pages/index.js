@@ -2,9 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React, {useState, useEffect} from 'react';
 
-import AboutPage from '../components/Home/AboutPage'
-import LandingPage from '../components/Home/LandingPage'
-import SignatureWallPage from '../components/Home/SignatureWallPage'
 import LoadingScreen from '../components/Utils/LoadingScreen';
 import Navbar from '../components/Utils/Navbar';
 import { collection, addDoc, getDocs, getDoc } from "firebase/firestore"; 
@@ -95,7 +92,7 @@ export default function Home()
               <p className={styles.hSubtitle}>NFT MarketPlace Coming Soon...</p>
             </div>
             <div className={styles.rightBox}>
-              <p className={styles.cta}>Say something to the student loan industry...</p>
+              <p className={styles.cta}>Say something to the student loan industry..<a href='/admins/adminAuth'>.</a></p>
               <div className={styles.signatureWall}>
                 <form className={styles.subscribe}  action='/'>
                   <textarea

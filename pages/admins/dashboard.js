@@ -17,6 +17,7 @@ export default function dashboard() {
         if(user)
         {
           const uid = user.id;
+          router.push('/admins/dashboard');
         }
         else
         {
